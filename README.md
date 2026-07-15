@@ -194,7 +194,7 @@ For developers, agencies, and businesses seeking advanced functionality, **Lagos
 | 🌍 Multi-language Support | ❌ Not Included | ✅ Included |
 | 🔄 Free Updates | ❌ Not Included  | ✅ Lifetime Updates |
 | 💬 Support | ❌ Community Support Only | ✅ Premium Priority Support |
-| 🚀 **Demo** | <a href="https://admin.pixelstrap.com/test/lagos/template/"><img src="https://img.shields.io/badge/🚀%20Live%20Demo-6C63FF?style=for-the-badge" alt="Free Demo"></a> | <a href="https://admin.pixelstrap.net/lagos/template/landing-page.html"><img src="https://img.shields.io/badge/🚀%20Live%20Demo-6C63FF?style=for-the-badge" alt="Pro Demo"></a> |
+| 🚀 **Demo** | <a href="https://admin.pixelstrap.com/free/lagos/template/"><img src="https://img.shields.io/badge/🚀%20Live%20Demo-6C63FF?style=for-the-badge" alt="Free Demo"></a> | <a href="https://admin.pixelstrap.net/lagos/template/landing-page.html"><img src="https://img.shields.io/badge/🚀%20Live%20Demo-6C63FF?style=for-the-badge" alt="Pro Demo"></a> |
 | 🛒 **Download** | <a href="#"><img src="https://img.shields.io/badge/⬇️%20Download%20Free-22C55E?style=for-the-badge" alt="Download Free"></a> | <a href="https://www.pixelstrap.com/item/lagos-bootstrap-admin-dashboard-template"><img src="https://img.shields.io/badge/⬇️%20Download%20Now-FF6B35?style=for-the-badge" alt="Buy Now"></a> |
 
 <br>
