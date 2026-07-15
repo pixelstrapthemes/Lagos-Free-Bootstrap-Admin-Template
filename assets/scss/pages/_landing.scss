@@ -1,0 +1,239 @@
+/**=====================
+    3.26 Landing CSS Start
+==========================**/
+/* MESH LOADER */
+
+
+::-moz-selection {
+  background-color: $primary-color;
+  color: $white;
+}
+
+$ease-out-quint: cubic-bezier(0.230, 1.000, 0.320, 1.000);
+$ease-out-quart: cubic-bezier(0.165, 0.840, 0.440, 1.000);
+
+// start tap-top
+
+$color_1: rgba(0, 0, 0, 0.3);
+
+@-webkit-keyframes border-transform {
+
+  0%,
+  100% {
+    border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%;
+  }
+
+  14% {
+    border-radius: 40% 60% 54% 46% / 49% 60% 40% 51%;
+  }
+
+  28% {
+    border-radius: 54% 46% 38% 62% / 49% 70% 30% 51%;
+  }
+
+  42% {
+    border-radius: 61% 39% 55% 45% / 61% 38% 62% 39%;
+  }
+
+  56% {
+    border-radius: 61% 39% 67% 33% / 70% 50% 50% 30%;
+  }
+
+  70% {
+    border-radius: 50% 50% 34% 66% / 56% 68% 32% 44%;
+  }
+
+  84% {
+    border-radius: 46% 54% 50% 50% / 35% 61% 39% 65%;
+  }
+}
+
+/* #Progress
+================================================== */
+.blok {
+  &:nth-of-type(odd) {
+    background-color: $white;
+  }
+
+  &:nth-of-type(even) {
+    background-color: $primary-color;
+  }
+}
+
+
+
+
+
+// end tap-top
+
+
+
+
+.d-flex {
+  display: flex;
+  align-items: flex-start;
+
+  .flex-grow-1 {
+    flex: 1;
+  }
+}
+
+
+
+
+
+
+.f-light {
+  color: #52526C;
+  opacity: 0.8;
+}
+
+
+
+
+
+.layout {
+  h5 {
+    margin-bottom: 10px;
+    opacity: .8;
+    letter-spacing: 1.2px;
+  }
+
+  .btn {
+    padding: 0.15rem 0.5rem;
+  }
+}
+
+.common-card {
+  background: #FCFCFD;
+  border: 2px dashed $white;
+  box-shadow: 0px 9px 20px rgba(46, 35, 94, 0.07);
+  border-radius: 10px;
+}
+
+
+@keyframes rotate {
+  from {
+    transform: rotate(-360deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+.sub-title {
+  font-size: calc(18px + (26 - 18) * ((100vw - 300px) / (1920 - 300)));
+  font-family: $landing-cursive;
+  font-weight: 700;
+  color: $tertiary-color;
+}
+
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+$landing-color : var(--theme-default);
+
+
+
+
+.page-wrapper,
+.landing-page {
+  overflow: hidden;
+
+  .section-space {
+    padding: 80px 0;
+  }
+
+
+  .lagos-demo-section {
+    position: relative;
+
+    .img-effect {
+      -webkit-box-shadow: 0 0 37px rgba(8, 21, 66, 0.15);
+      box-shadow: 0 0 37px rgba(8, 21, 66, 0.15);
+      border-radius: 15px;
+      padding: 20px;
+      position: relative;
+
+      .hover-link {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(10deg, rgba($dark-color, 0.8) 0%, transparent 80%);
+        border-radius: 15px;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        justify-content: center;
+        padding-bottom: 20px;
+        opacity: 0;
+        transition: all 0.3s ease;
+        left: 0;
+        top: 0;
+
+      }
+
+      &:hover {
+        .hover-link {
+          opacity: 1;
+          z-index: 1;
+          transition: all 0.3s ease;
+        }
+      }
+
+      img {
+        width: 100%;
+        transition: all 0.3s ease;
+      }
+
+      &:hover {
+        box-shadow: 0 0 37px rgba(8, 21, 66, 0.15);
+        transition: all 0.3s ease;
+
+        img {
+          transform: scale(1.01);
+          transition: all 0.3s ease;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+ul.dot-group {
+  display: flex;
+  gap: 6px;
+  padding: 15px 10px 0;
+
+  li {
+    width: 8px;
+    height: 8px;
+    background: #E8E8EC;
+    border-radius: 100%;
+  }
+}
+
+
+
+
+
+/**=====================
+    3.26 Landing CSS Ends
+==========================**/

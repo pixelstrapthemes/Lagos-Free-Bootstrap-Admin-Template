@@ -1,0 +1,533 @@
+- var theme_customizer      = true;
+- var apex                  = true;
+- var apexmoment            = true;
+- var date_picker_range     = true;
+- var dashboard_default     = true;
+- var page_datatable        = true;
+- var datatable             = true;
+- var page_datatable1       = true;
+- var notify                = true;
+- var animate               = true; 
+- var typeahead             = true;
+- var typeahead_search      = true;
+- var sidebar               = true;
+- var scrollbar             = true;
+- var wow                   = true;
+- var slick                 = true;
+- var header_slider         = true;
+- var height_equal          = true;
+include ../../components/mixin 
+doctype html
+html(lang='en')
+  include ../../components/header-files
+  body
+    include ../../components/loader
+    include ../../components/taptop
+    a.buy-now-pro(href="https://www.pixelstrap.com/item/lagos-bootstrap-admin-dashboard-template" target="_blank") Buy Now Pro
+    // page-wrapper Start
+    #pageWrapper.page-wrapper.compact-wrapper
+      .page-header.row
+        +breadcrumb(['Dashboard','Default'],'Default Dashboard')
+        include ../../components/header
+      // Page Body Start
+      .page-body-wrapper
+        include ../../components/sidebar
+        .page-body
+          // Container-fluid starts
+          .container-fluid.default-dashboard  
+            .row
+              .col-xxl-4.col-xl-6.col-md-7.box-col-6
+                .card.profile-greeting
+                  .card-body
+                    .profile-greeting-details
+                      h3.f-w-600 Welcome Back, 
+                      h4.txt-secondary.f-w-600 Sade Parren
+                      p You have completed 40% of your this day! Start a goal & improve result.
+                      a.btn.btn-primary(href="index.html" target="_blank") Get Started
+                        i.fa.fa-angle-double-right.ms-1
+                    img.img-fluid(src="../assets/images/dashboard/greeting.png" alt="")
+                  .shap-block
+                    .rounded-shap
+                      i
+                      i
+                      i  
+              .col-xxl-2.col-xl-4.col-md-5.order-item-1.box-col-5 
+                .row 
+                  .col-md-12.col-sm-6
+                    .card.since
+                      .card-body
+                        .customer-card.d-flex.b-l-primary.border-2
+                          div.ms-3
+                            h3.mt-1 Clients
+                            h5.mt-1 2.536
+                          .dashboard-user.bg-light-primary
+                            span
+                            svg
+                              use(href='../assets/svg/icon-sprite.svg#male')
+                        .customers.text-center.social-group
+                          ul.d-flex
+                            li.d-inline-block
+                              img.img-30.rounded-circle(src='../assets/images/dashboard/user/1.png', alt='')
+                            li.d-inline-block
+                              img.img-30.rounded-circle(src='../assets/images/dashboard/user/2.png', alt='')
+                            li.d-inline-block
+                              img.img-30.rounded-circle(src='../assets/images/dashboard/user/3.png', alt='')
+                            li.d-inline-block
+                              img.img-30.rounded-circle(src='../assets/images/dashboard/user/4.png', alt='')
+                            li.d-inline-block
+                              img.img-30.rounded-circle(src='../assets/images/dashboard/user/5.png', alt='')
+                        .customer.mt-2
+                          span.me-1
+                            svg
+                              use(href='../assets/svg/icon-sprite.svg#arrow-up')
+                          span.font-success.me-2 + 4.6%
+                          span Since last Week
+                  .col-md-12.col-sm-6
+                    .card.since
+                      .card-body.money
+                        .customer-card.d-flex.b-l-secondary.border-2
+                          div.ms-3
+                            h3.mt-1 Earnings
+                            h5.mt-1 $6.642
+                          .dashboard-user.bg-light-secondary
+                            span
+                            svg
+                              use(href='../assets/svg/icon-sprite.svg#money')
+                        .customer.mt-2
+                          span.me-1
+                            svg
+                              use(href='../assets/svg/icon-sprite.svg#arrow-up')
+                          span.font-success.me-2 + 3.5%
+                          span Since last Week
+              .col-md-6
+                .card
+                  .card-header.pb-0.card-no-border
+                    .header-top
+                      h4 Sell Overview
+                      .dropdown.icon-dropdown
+                        button#userdropdown6.btn.dropdown-toggle(type='button' data-bs-toggle='dropdown' aria-expanded='false')
+                          i.icon-more-alt
+                        .dropdown-menu.dropdown-menu-end(aria-labelledby='userdropdown6')
+                          a.dropdown-item(href='#') Weekly
+                          a.dropdown-item(href='#') Monthly
+                          a.dropdown-item(href='#') Yearly
+                  .card-body.py-0.ps-0
+                    #monthly-overview.monthly-overview
+              .col-xl-5.col-md-6.xl-60.box-col-7
+                .card
+                  .card-header.card-no-border.pb-0
+                    .header-top
+                      h4 Statistical Analysis
+                      .dropdown.icon-dropdown
+                        button#userdropdown.btn.dropdown-toggle(type='button' data-bs-toggle='dropdown' aria-expanded='false')
+                          i.icon-more-alt
+                        .dropdown-menu.dropdown-menu-end(aria-labelledby='userdropdown')
+                          a.dropdown-item(href='#') Weekly
+                          a.dropdown-item(href='#') Monthly
+                          a.dropdown-item(href='#') Yearly
+                  .card-body.pe-0  
+                    .studay-statistics  
+                      ul.d-flex.align-item-center.gap-2
+                        li 
+                          span.bg-primary 
+                          | Web Design
+                        li 
+                          span.bg-secondary 
+                          | Flutter App
+                    #study-statistics
+              .col-xl-7.xl-100.xl-order-1.box-col-12
+                .card
+                  .card-header.pb-0.card-no-border
+                    .header-top
+                      h4 Order History 
+                      .dropdown.icon-dropdown
+                        button.btn.dropdown-toggle(type='button' data-bs-toggle='dropdown' aria-expanded='false')
+                          i.icon-more-alt
+                        .dropdown-menu.dropdown-menu-end
+                          a.dropdown-item(href='#') Weekly
+                          a.dropdown-item(href='#') Monthly
+                          a.dropdown-item(href='#') Yearly
+                  .card-body.pt-0.recent
+                    .table-responsive.theme-scrollbar
+                      table#recent-order.table.display(style='width:100%')
+                        thead
+                          tr
+                            th
+                              .form-check
+                                input.form-check-input(type='checkbox' value='')
+                                label.form-check-label
+                            th No.
+                            th Customer Name
+                            th ID
+                            th Date
+                            th City
+                            th Status
+                            th Amount
+                        tbody
+                            tr
+                              td
+                                .form-check
+                                  input.form-check-input(type='checkbox' value='')
+                                  label.form-check-label
+                              td 1
+                              td
+                                .d-flex
+                                  .flex-shrink-0
+                                    img(src='../assets/images/dashboard/order/1.png' alt="")
+                                  .flex-grow-1.ms-3
+                                    a(href="#")
+                                      h5 Ossim Keter 
+                                    p UX Designer
+                              td #8653
+                              td 25/1/2024
+                              td Sydney
+                              td 
+                                button.btn.btn-primary Pending
+                              td $ 5.538
+                            tr
+                              td
+                                .form-check
+                                  input.form-check-input(type='checkbox' value='')
+                                  label.form-check-label
+                              td 2
+                              td
+                                .d-flex
+                                  .flex-shrink-0
+                                    img(src='../assets/images/dashboard/order/2.png' alt="")
+                                  .flex-grow-1.ms-3
+                                    a(href="#")
+                                      h5 Vent Loren
+                                    p Website Design
+                              td #6549
+                              td 10/09/2024
+                              td Mecca
+                              td 
+                                button.btn.btn-secondary.text-white Cancel
+                              td $ 1.923
+                            tr
+                              td
+                                .form-check
+                                  input.form-check-input(type='checkbox' value='')
+                                  label.form-check-label
+                              td 3
+                              td
+                                .d-flex
+                                  .flex-shrink-0
+                                    img(src='../assets/images/dashboard/order/3.png' alt="")
+                                  .flex-grow-1.ms-3
+                                    a(href="#")
+                                      h5 Fran Loain
+                                    p Web Research
+                              td #3674
+                              td 26/11/2024
+                              td Kolkata
+                              td 
+                                button.btn.btn-warning.text-white Paid
+                              td $ 2.937
+                            tr
+                              td
+                                .form-check
+                                  input.form-check-input(type='checkbox' value='')
+                                  label.form-check-label
+                              td 4
+                              td
+                                .d-flex
+                                  .flex-shrink-0
+                                    img(src='../assets/images/dashboard/order/4.png' alt="")
+                                  .flex-grow-1.ms-3
+                                    a(href="#")
+                                      h5 Lofte Horen
+                                    p Flutter App
+                              td #9614
+                              td 22/07/2024
+                              td Chicago
+                              td 
+                                button.btn.btn-tertiary.text-white Done 
+                              td $ 7.938	
+              .col-xl-4.col-md-7.xl-40.box-col-5
+                .card.appointment-detail
+                  .card-header.pb-0.card-no-border
+                    .header-top
+                      h4 Overall Appointment
+                      .dropdown.icon-dropdown
+                        button.btn.dropdown-toggle(type='button' data-bs-toggle='dropdown' aria-expanded='false')
+                          i.icon-more-alt
+                        .dropdown-menu.dropdown-menu-end
+                          a.dropdown-item(href='#') Weekly
+                          a.dropdown-item(href='#') Monthly
+                          a.dropdown-item(href='#') Yearly
+                  .card-body
+                    .table-responsive.theme-scrollbar
+                      table.table
+                        tbody
+                          tr
+                            td
+                              .d-flex
+                                img.img-fluid.align-top.circle(src="../assets/images/dashboard/appointment/01.png", alt="")
+                                .flex-grow-1
+                                  a(href="#")
+                                    span Elle Abeson
+                                  p.mb-0 5 Hour
+                                .active-status.active-online
+                            td 10 March 
+                            td.text-end
+                              button.btn.background-light-primary(type="button" onclick="document.location='#'") Pending
+                          tr 
+                            td 
+                              .d-flex
+                                img.img-fluid.align-top.circle(src="../assets/images/dashboard/appointment/02.png", alt="")
+                                .flex-grow-1
+                                  a(href="#")
+                                    span Anna Catmire
+                                  p.mb-0 1 Hour
+                                .active-status.active-busy
+                            td 25 May 
+                            td.text-end
+                              button.btn.background-light-secondary(type="button" onclick="document.location='#'") Done
+                                i.fa.fa-check-circle.ms-1
+                          tr 
+                            td 
+                              .d-flex
+                                img.img-fluid.align-top.circle(src="../assets/images/dashboard/appointment/03.png", alt="")
+                                .flex-grow-1
+                                  a(href="#")
+                                    span Rachel Gren
+                                  p.mb-0 5 Day After
+                                .active-status.active-offline
+                            td 25 March
+                            td.text-end
+                              button.btn.background-light-tertiary(type="button" onclick="document.location='#'") Pending
+                          tr
+                            td 
+                              .d-flex
+                                img.img-fluid.align-top.circle(src="../assets/images/dashboard/appointment/04.png", alt="")
+                                .flex-grow-1
+                                  a(href="#")
+                                    span Lara Dason
+                                  p.mb-0 Now
+                                .active-status.active-online
+                            td 12 August
+                            td.text-end
+                              button.btn.background-light-warning(type="button" onclick="document.location='#'") Cancel
+                          tr 
+                            td 
+                              .d-flex
+                                img.img-fluid.align-top.circle(src="../assets/images/dashboard/appointment/05.png", alt="")
+                                .flex-grow-1
+                                  a(href="#")
+                                    span Lory Fentor
+                                  p.mb-0 2 Hour
+                                .active-status.active-offline
+                            td 06 May
+                            td.text-end
+                              button.btn.background-light-success(type="button" onclick="document.location='#'") Pending
+              .col-xl-4.col-md-5.xl-50.box-col-6
+                .card.sellview-sec
+                  .card-header.pb-0.card-no-border
+                    .header-top
+                      h4 Monthly Overview
+                      .dropdown.icon-dropdown
+                        button.btn.dropdown-toggle(type='button' data-bs-toggle='dropdown' aria-expanded='false')
+                          i.icon-more-alt
+                        .dropdown-menu.dropdown-menu-end
+                          a.dropdown-item(href='#') Weekly
+                          a.dropdown-item(href='#') Monthly
+                          a.dropdown-item(href='#') Yearly
+                  .card-body.py-0
+                    #sell-view   
+              .col-xl-4.col-md-6.xl-50.lg-order-1.md-order-1.box-col-6
+                .card.our-todolist
+                  .card-header.pb-0.card-no-border
+                    .header-top
+                      h4 Activity Timeline
+                      .dropdown.icon-dropdown
+                        button.btn.dropdown-toggle(type='button' data-bs-toggle='dropdown' aria-expanded='false')
+                          i.icon-more-alt
+                        .dropdown-menu.dropdown-menu-end
+                          a.dropdown-item(href='#') Weekly
+                          a.dropdown-item(href='#') Monthly
+                          a.dropdown-item(href='#') Yearly
+                  .card-body
+                    .activity-timeline.todo-timeline
+                      .d-flex
+                        .activity-line
+                        .activity-dot-primary
+                        .flex-grow-1
+                          p.mt-0.todo-font
+                            span.font-primary 25-11-2024 
+                            | Today
+                          .d-flex.mt-0
+                            img.img-fluid.img-30(src='../assets/images/dashboard/todo.png', alt='')
+                            .flex-grow-1
+                              h5 New Order $6348
+                              p.mb-0 Update New Product Pdf And Delivery Product
+                      .d-flex
+                        .activity-dot-secondary
+                        .flex-grow-1
+                          p.mt-0.todo-font
+                            span.font-primary 25-11-2024 
+                            | Today
+                            span.badge.badge-primary.ms-2 New
+                          h5 Sade just like your product
+                      .d-flex
+                        .activity-dot-primary
+                        .flex-grow-1
+                          p.mt-0.todo-font
+                            span.font-primary 25-11-2024 
+                            | Today
+                          h5 Vent Loren just like your product
+                          p.mb-0 Design and style should work making you look good and feel good without lot of effort.
+                      .d-flex
+                        .activity-dot-primary
+                        .flex-grow-1
+                          p.mt-0.todo-font
+                            span.font-primary 25-11-2024 
+                            | Today
+                          h5 Take Our Client Meeting
+                          p.mb-0 Hosting an effective client meeting.
+              .col-xxl-7.box-col-12
+                .card
+                  .card-header.card-no-border.pb-0
+                    .header-top
+                      h4 Product Revenue
+                      .dropdown.icon-dropdown
+                        button#userdropdown15.btn.dropdown-toggle(type='button' data-bs-toggle='dropdown' aria-expanded='false')
+                          i.icon-more-alt
+                        .dropdown-menu.dropdown-menu-end(aria-labelledby='userdropdown15')
+                          a.dropdown-item(href='#') Weekly
+                          a.dropdown-item(href='#') Monthly
+                          a.dropdown-item(href='#') Yearly
+                  .card-body.sales-product.pt-0
+                    .table-responsive.theme-scrollbar
+                      table#sale-product.table.display(style='width:100%')
+                          thead
+                            tr
+                              th
+                                .form-check
+                                  input.form-check-input(type='checkbox' value='')
+                                  label.form-check-label
+                              th Name
+                              th Date
+                              th Amount
+                              th % Sold
+                              th Progressbar
+                          tbody
+                            tr
+                              td
+                                .form-check
+                                  input.form-check-input(type='checkbox' value='')
+                                  label.form-check-label
+                              td
+                                .d-flex.align-items-center
+                                  .flex-shrink-0
+                                    img(src='../assets/images/dashboard/product/1.png' alt="")
+                                  .flex-grow-1
+                                    a(href="#")
+                                      h5 Light sensor Lamp
+                              td 25 Aug 2024
+                              td  $ 5.938
+                              td  50.93%
+                              td
+                                .progress.progress-striped-primary.b-r-2
+                                  .progress-bar(role='progressbar', style='width: 60%', aria-valuenow='10', aria-valuemin='0', aria-valuemax='100')
+                            tr
+                              td
+                                .form-check
+                                  input.form-check-input(type='checkbox' value='')
+                                  label.form-check-label
+                              td
+                                .d-flex.align-items-center
+                                  .flex-shrink-0
+                                    img(src='../assets/images/dashboard/product/2.png' alt="")
+                                  .flex-grow-1
+                                    a(href="#")
+                                      h5 Sony Bluetooth 
+                              td 10 Mar 2024
+                              td  $ 5.937
+                              td  25.52%
+                              td
+                                .progress.progress-striped-secondary.b-r-2
+                                  .progress-bar(role='progressbar', style='width: 50%', aria-valuenow='10', aria-valuemin='0', aria-valuemax='100')
+                            tr
+                              td
+                                .form-check
+                                  input.form-check-input(type='checkbox' value='')
+                                  label.form-check-label
+                              td
+                                .d-flex.align-items-center
+                                  .flex-shrink-0
+                                    img(src='../assets/images/dashboard/product/3.png' alt="")
+                                  .flex-grow-1
+                                    a(href="#")
+                                      h5 Watch series 
+                              td 10 Jun 2024
+                              td  $ 3.256
+                              td  56.12%
+                              td
+                                .progress.progress-striped-warning.b-r-2
+                                  .progress-bar(role='progressbar', style='width: 50%', aria-valuenow='10', aria-valuemin='0', aria-valuemax='100')
+                            tr
+                              td
+                                .form-check
+                                  input.form-check-input(type='checkbox' value='')
+                                  label.form-check-label
+                              td
+                                .d-flex.align-items-center
+                                  .flex-shrink-0
+                                    img(src='../assets/images/dashboard/product/4.png' alt="")
+                                  .flex-grow-1
+                                    a(href="#")
+                                      h5 Macbook Pro 
+                              td 21 Oct 2024
+                              td  $ 6.538
+                              td  23.41%
+                              td
+                                .progress.progress-striped-tertiary.b-r-2
+                                  .progress-bar(role='progressbar', style='width: 80%', aria-valuenow='10', aria-valuemin='0', aria-valuemax='100')
+                            tr
+                              td
+                                .form-check
+                                  input.form-check-input(type='checkbox' value='')
+                                  label.form-check-label
+                              td
+                                .d-flex.align-items-center
+                                  .flex-shrink-0
+                                    img(src='../assets/images/dashboard/product/5.png' alt="")
+                                  .flex-grow-1
+                                    a(href="#")
+                                      h5 I phone Pro max
+                              td 10 Nov 2024
+                              td  $ 1.258
+                              td  14.34%
+                              td
+                                .progress.progress-striped-primary.b-r-2
+                                  .progress-bar(role='progressbar', style='width: 50%', aria-valuenow='10', aria-valuemin='0', aria-valuemax='100')
+              .col-xxl-5.col-xl-8.col-md-6.box-col-7
+                .beyo-line.row
+                  .beyoline-header.bg-light-primary
+                    #beyo-line
+                  .beyo-detail
+                    h4 Exploring Boundaries 
+                      span.badge.badge-primary 4 hours ago
+                    p One of the world's most finest, young surf srars, Kanoa lgarashi.
+                    .date-history
+                      ul
+                        li
+                          img.img-fluid(src="../assets/images/dashboard/beyond-line/1.png" , alt="")
+                        li
+                          img.img-fluid(src="../assets/images/dashboard/beyond-line/2.png" , alt="")
+                        li
+                          img.img-fluid(src="../assets/images/dashboard/beyond-line/3.png" , alt="")
+                        li
+                          img.img-fluid(src="../assets/images/dashboard/beyond-line/4.png" , alt="")
+                        li 
+                          h2 + 255
+                      .date-lable
+                        h3.float-end 15
+                        p.float-end January
+
+          // Container-fluid Ends
+        include ../../components/footer        
+    include ../../components/footer-files
+    script. 
+      new WOW().init();

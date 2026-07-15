@@ -1,0 +1,359 @@
+/**=====================
+    5.6 Select2 CSS Start
+==========================**/
+
+.dropzone {
+  background: unset;
+
+  &.dropzone-secondary {
+    border: 2px dashed $secondary-color;
+
+    i {
+      color: $secondary-color;
+    }
+  }
+
+  .note {
+    @media (max-width:360px) {
+      min-width: unset !important;
+    }
+  }
+
+  .dz-preview {
+    margin: 28px 18px !important;
+    box-shadow: unset;
+
+    .dz-details {
+      top: unset;
+      bottom: -6px;
+      position: relative;
+      padding-bottom: 6px;
+      background-color: unset;
+
+      [dir="rtl"] & {
+        left: unset;
+        right: 32px;
+      }
+      .dz-size {
+        color: var(--body-font-color);
+      }
+    }
+
+    &:hover {
+      .dz-error-message {
+        display: none !important;
+      }
+    }
+  }
+
+  .dz-error-mark {
+    .dz-remove {
+      position: relative;
+
+    }
+  }
+}
+
+.dz-preview {
+  .dz-remove {
+    cursor: pointer;
+  }
+}
+
+.dropzone-secondary {
+  .dz-preview {
+    .dz-remove {
+      color: $secondary-color;
+    }
+  }
+}
+
+.select2 {
+  max-width: 100%;
+}
+
+
+.select2-container--open {
+  .select2-dropdown {
+    z-index: 7;
+  }
+}
+
+.select2-container {
+  width: 100% !important;
+
+  &.select2 {
+    .selection {
+      display: block !important;
+    }
+  }
+}
+
+
+// Filepond
+
+.filepond--drop-label {
+  .filepond--label-action {
+    color: $danger-color;
+    text-decoration: none;
+  }
+}
+
+.filepond--list {
+  .filepond--file {
+    background-color: $primary-color;
+  }
+}
+
+// Tagify
+/* Do not show the "remove tag" (x) button when only a single tag remains */
+.customLook {
+  display: inline-block;
+  min-width: 0;
+  border: none;
+
+  .tagify__tag {
+    margin-top: 0;
+
+    &:only-of-type {
+      .tagify__tag__removeBtn {
+        display: none;
+      }
+    }
+
+    &:hover {
+      .tagify__tag__removeBtn {
+        transform: none;
+        opacity: 1;
+        margin-left: -1ch;
+      }
+    }
+  }
+
+  .tagify__tag__removeBtn {
+    opacity: 0;
+    transform: translateX(-6px) scale(.5);
+    margin-left: -3ch;
+    transition: .12s;
+  }
+
+  + {
+    button {
+      color: var(--theme-default);
+      font: bold 1.4em/1.65 Arial;
+      border: 0;
+      background: none;
+      box-shadow: 0 0 0 2px inset var(--theme-default);
+      border-radius: 50%;
+      width: 1.65em;
+      height: 1.65em;
+      cursor: pointer;
+      outline: none;
+      transition: .1s ease-out;
+      margin: 0 0 0 5px;
+      vertical-align: top;
+
+      &:hover {
+        box-shadow: 0 0 0 5px inset var(--theme-default);
+      }
+    }
+  }
+
+  .tagify__input {
+    display: none;
+  }
+}
+
+.tagify--empty {
+  .tagify__input {
+    &::before {
+      color: var(--chart-text-color);
+    }
+  }
+}
+
+
+// Flag tags
+.tagify__dropdown.extra-properties {
+  .tagify__dropdown__item {
+    >img {
+      display: inline-block;
+      vertical-align: middle;
+      height: 20px;
+      transform: scale(.75);
+      margin-right: 5px;
+      border-radius: 2px;
+      transition: .12s ease-out;
+    }
+
+    &:hover {
+      >img {
+        transform: none;
+        margin-right: 12px;
+      }
+    }
+  }
+
+  .tagify__dropdown__item--active {
+    >img {
+      transform: none;
+      margin-right: 12px;
+    }
+  }
+}
+
+.tagify.countries {
+  .tagify__input {
+    min-width: 175px;
+  }
+
+  tag {
+    white-space: nowrap;
+
+    img {
+      display: inline-block;
+      height: 16px;
+      margin-right: 3px;
+      border-radius: 2px;
+      pointer-events: none;
+    }
+  }
+}
+
+.tagify--select {
+  width: 100%;
+}
+
+.tagify__dropdown__wrapper {
+  background: var(--white);
+  border-color: var(--recent-dashed-border);
+}
+
+.tagify__dropdown__item--active {
+  background-color: $gray-60;
+  color: var(--body-font-color);
+}
+
+.tagify {
+  --tags-focus-border-color: #cccccc;
+}
+
+.tagify__input {
+  color: $dark-color;
+}
+
+.tagify--select {
+  &::after {
+    [dir="rtl"] & {
+      right: unset;
+      left: 0;
+      transform: translate(150%, -50%) scaleX(1.2) rotate(90deg);
+    }
+
+    color: var(--chart-text-color);
+  }
+
+  .tagify__tag {
+    [dir="rtl"] & {
+      right: unset;
+      left: 1.8em;
+    }
+  }
+}
+
+.tagify--select[aria-expanded=true]::after {
+  [dir="rtl"] & {
+    transform: translate(150%, -50%) rotate(270deg) scale(1.2);
+  }
+}
+
+
+.iti--allow-dropdown {
+  .iti__flag {
+    background-image: url('../images/forms/flags.png');
+  }
+}
+
+
+
+.selected-box {
+  background: var(--light2);
+  color: $color_1;
+  position: relative;
+  order: 0;
+  padding: 12px 24px;
+  cursor: pointer;
+
+  @media (min-width:1007px) and (max-width:1920px) {
+    max-width: calc(265px + (400 - 265) * ((100vw - 1007px) / (1920 - 1007)));
+  }
+
+  @media (min-width:768px) and (max-width:1006px) {
+    max-width: calc(295px + (350 - 295) * ((100vw - 1007px) / (1006 - 768)));
+  }
+
+  @media (max-width:767px) {
+    max-width: calc(242px + (415 - 242) * ((100vw - 320px) / (767 - 320)));
+  }
+
+  &::after {
+    content: "\f078";
+    font-family: "FontAwesome";
+    position: absolute;
+    height: 100%;
+    width: 32px;
+    right: 10px;
+    top: 12px;
+    transition: all 0.4s;
+
+    [dir="rtl"] & {
+      left: 10px;
+      right: unset;
+    }
+
+  }
+}
+
+.search-box {
+  input {
+    width: 100%;
+    padding: 12px 16px;
+    font-size: 16px;
+    position: absolute;
+    z-index: 1;
+    border: 2px dashed var(--chart-dashed-border);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s;
+    border-radius: 6px;
+
+    @media (min-width:1007px) and (max-width:1920px) {
+      max-width: calc(265px + (400 - 265) * ((100vw - 1007px) / (1920 - 1007)));
+    }
+
+    @media (min-width:768px) and (max-width:1006px) {
+      max-width: calc(295px + (350 - 295) * ((100vw - 1007px) / (1006 - 768)));
+    }
+
+    @media (max-width:767px) {
+      max-width: calc(242px + (415 - 242) * ((100vw - 320px) / (767 - 320)));
+      padding: 9px 16px;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.select2-search {
+  .select2-search__field {
+    &:focus-within {
+      outline: 0 !important;
+    }
+  }
+}
+
+/**=====================
+    5.6 Select2 CSS Ends
+==========================**/

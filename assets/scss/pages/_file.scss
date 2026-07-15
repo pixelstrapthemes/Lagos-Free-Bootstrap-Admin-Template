@@ -1,0 +1,43 @@
+/**=====================
+   3.18 File CSS
+==========================**/
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1440px) {
+    .file-content .folder .folder-box .d-flex {
+        display: block !important;
+        text-align: center;
+
+        .flex-grow-1 {
+            margin-left: 0 !important;
+            margin-top: 5px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 1199px) {
+
+
+    .job-sidebar {
+        .job-left-aside.open {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
+}
+
+
+
+/**=====================
+    3.18 File CSS
+==========================**/

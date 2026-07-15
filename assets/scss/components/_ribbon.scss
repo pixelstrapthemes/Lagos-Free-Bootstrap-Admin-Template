@@ -1,0 +1,83 @@
+/**=====================
+  2.26 Ribbon CSS Start
+==========================**/
+
+
+
+
+
+
+@each $ribbon-name,
+$ribbon-color in (primary, $primary-color),
+(secondary, $secondary-color),
+(success, $success-color),
+(danger, $danger-color),
+(info, $info-color),
+(light, $light-color),
+(dark, $dark-color),
+(warning, $warning-color) {
+  .ribbon-#{$ribbon-name} {
+    background: $ribbon-color;
+  }
+
+  .ribbon-#{$ribbon-name} {
+    background: $ribbon-color;
+  }
+
+
+
+  .ribbon-#{$ribbon-name}.ribbon-corner {
+    &:before {
+      border-top-color: $ribbon-color;
+      border-left-color: $ribbon-color;
+    }
+
+    &.ribbon-right:before {
+      border-right-color: $ribbon-color;
+      border-left-color: transparent;
+    }
+
+    &.ribbon-bottom:before {
+      border-top-color: transparent;
+      border-bottom-color: $ribbon-color;
+    }
+  }
+
+  .ribbon-#{$ribbon-name}.ribbon-clip {
+    &:before {
+      border-color: transparent;
+      border-top-color: darken($ribbon-color, 10%);
+      border-right-color: darken($ribbon-color, 10%);
+    }
+  }
+
+  .ribbon-#{$ribbon-name}.ribbon-clip-right {
+    &:before {
+      border-right-color: transparent;
+      border-top-color: darken($ribbon-color, 10%);
+      border-left-color: darken($ribbon-color, 10%);
+    }
+  }
+
+  .ribbon-#{$ribbon-name}.ribbon-clip-bottom {
+    &:before {
+      border-top-color: transparent;
+      border-bottom-color: darken($ribbon-color, 10%);
+      border-right-color: darken($ribbon-color, 10%);
+    }
+  }
+
+  .ribbon-#{$ribbon-name}.ribbon-clip-bottom-right {
+    &:before {
+      border-top-color: transparent;
+      border-bottom-color: darken($ribbon-color, 10%);
+      border-right-color: transparent;
+      border-left-color: darken($ribbon-color, 10%);
+    }
+  }
+}
+
+
+/**=====================
+  2.26 Ribbon CSS Ends
+==========================**/

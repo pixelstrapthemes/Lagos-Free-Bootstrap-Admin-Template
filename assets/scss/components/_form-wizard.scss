@@ -1,0 +1,47 @@
+/**=====================
+    2.17 Form-wizard CSS Start
+==========================**/
+
+
+/*Form Wizard One ends*/
+
+/*Form Wizard Four Start*/
+.theme-form{
+	.wizard-4 {
+		background-image: url(../images/other-images/coming-soon-bg.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+}
+
+
+.wizard {
+	max-width: 670px;
+	margin: 0 auto;
+
+	.wizard-content {
+		box-shadow: unset;
+		background-color: $white;
+		border-radius: 5px;
+	}
+}
+
+
+.accordion {
+	.accordion-item {
+		.accordion-body {
+			.choose-bank {
+				.form-check {
+					.form-check-label {
+						color: var(--body-font-color);
+					}
+				}
+			}
+		}
+	}
+}
+
+/*Form Wizard Four Ends*/
+/**=====================
+   2.17 Form-wizard CSS Ends
+==========================**/

@@ -1,0 +1,97 @@
+/**=====================
+   3.35 Projectlist CSS Start
+==========================**/
+
+
+.tab-content {
+	.row {
+		>div.col-xl-4 {
+
+			$show-numbers: true;
+
+			@if $show-numbers {
+				@for $i from 1 through 15 {
+					&:nth-child(#{$i}) {
+						animation-fill-mode: both;
+						animation: fadeIncustom .5s linear #{$i}00000ms;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+.projectdetails {
+	.card {
+		.card-body {
+			padding: 20px;
+		}
+
+		.card-footer {
+			padding: 20px;
+		}
+
+		select {
+			width: 90px;
+			height: 28px;
+			font-size: 11px;
+			right: 20px;
+			top: 20px;
+		}
+	}
+}
+
+.projectmore {
+	.details {
+		.col-4 {
+			margin-bottom: 5px;
+
+			&:nth-child(even) {
+				opacity: 0.5;
+			}
+		}
+	}
+
+	h5 {
+		font-size: 20px;
+		font-weight: 600;
+	}
+
+	.task-list {
+		position: relative;
+
+		ul {
+			li {
+				margin-bottom: 5px
+			}
+
+			&+ul {
+				position: absolute;
+				left: 50%;
+				top: 0;
+			}
+		}
+	}
+}
+
+.new-users {
+	&.activity {
+		.gradient-round {
+			padding: 13px;
+			font-size: 20px;
+			line-height: 1.4;
+			text-align: center;
+			top: unset !important;
+
+			&::after {
+				display: none;
+			}
+		}
+	}
+}
+
+/**=====================
+   3.35 Projectlist CSS Ends
+==========================**/

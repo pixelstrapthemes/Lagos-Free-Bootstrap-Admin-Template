@@ -1,0 +1,76 @@
+/**=====================
+    3.37 Social-app CSS start
+==========================**/
+
+.user-profile {
+  .hovercard {
+    .socialheader {
+      background: url(../images/social-app/social-image.png);
+    }
+
+    .user-image {
+      .share-icons {
+        position: absolute;
+        right: 100px;
+        top: -27px;
+
+        li {
+          display: inline-block;
+          margin-right: 10px;
+
+          .social-icon {
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            vertical-align: middle;
+            justify-content: center;
+            border-radius: 100%;
+
+            i {
+              color: $white;
+              font-size: 25px;
+            }
+          }
+
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .card-footer {
+    >div {
+      h3 {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+
+
+.photos {
+  margin-bottom: -15px;
+
+  ul {
+    li {
+      display: inline-block;
+      margin-right: 10px;
+      margin-bottom: 10px;
+      width: 70px;
+
+      &:nth-child(4n) {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+
+/**=====================
+    3.37 Social-app CSS end
+==========================**/

@@ -1,0 +1,46 @@
+/**=====================
+	3.30 Megaoption CSS Start
+==========================**/
+
+
+.border-style {
+	.card {
+		box-shadow: none;
+		border: 1px dashed $light-gray !important;
+	}
+}
+
+
+.card-wrapper {
+	.payment-wrapper {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding-bottom: 8px;
+		margin-bottom: 16px;
+		border-bottom: 1px dashed var(--chart-dashed-border);
+
+		&:last-child {
+			padding-bottom: 0;
+			margin-bottom: 0;
+			border-bottom: unset;
+		}
+
+		.payment-second {
+			img {
+				width: 50px;
+			}
+
+			.mega-icons {
+				width: 20px;
+				height: 20px;
+			}
+
+		}
+	}
+}
+
+
+/**=====================
+    3.30 Megaoption CSS Ends
+==========================**/
