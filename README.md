@@ -1,6 +1,6 @@
 <p>
    <a href="https://www.pixelstrap.com/" target="_blank">
-      <img src="https://github.com/pixelstrapthemes/demo/blob/main/logo.png" alt="lagos-image"  width="250px">
+      <img src="https://github.com/pixelstrapthemes/Lagos-Free-Bootstrap-Admin-Template/blob/main/logo.png" alt="lagos-image"  width="250px">
    </a>
 </p>
 
@@ -10,7 +10,11 @@
    </a>
 </h1>
 <p>The Most Powerful & Feature-Rich Free Bootstrap 5 HTML Admin Dashboard Template for Developers.</p>
-
+<p>
+   <a href="https://www.pixelstrap.com/item/lagos-bootstrap-admin-dashboard-template" target="_blank">
+      <img src="https://github.com/pixelstrapthemes/Lagos-Free-Bootstrap-Admin-Template/blob/main/free_preview.png" alt="lagos-image">
+   </a>
+</p>
 
 # 🚀 Welcome to Lagos
 
@@ -139,7 +143,7 @@ Whether you're developing a **CRM**, **SaaS platform**, **analytics dashboard**,
 
 <p align="center">
    <a href="https://www.pixelstrap.com/" target="_blank">
-      <img src="https://github.com/pixelstrapthemes/demo/blob/main/preview_1.png" alt="lagos-image">
+      <img src="https://github.com/pixelstrapthemes/Lagos-Free-Bootstrap-Admin-Template/blob/main/preview_1.png" alt="lagos-image">
    </a>
 </p>
 
@@ -246,7 +250,7 @@ Laravel
 
 More Templates
 
-<a href="https://www.pixelstrap.com/"> <img src="https://github.com/pixelstrapthemes/demo/raw/main/more.png" width="320"> </a> </td> </tr> </table>
+<a href="https://www.pixelstrap.com/"> <img src="https://github.com/pixelstrapthemes/Lagos-Free-Bootstrap-Admin-Template/blob/main/more.png" width="320"> </a> </td> </tr> </table>
 <div>
 
 ### 🚀 Find the Right Version for Your Project
